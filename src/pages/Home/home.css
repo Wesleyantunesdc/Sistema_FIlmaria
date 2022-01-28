@@ -1,4 +1,4 @@
-.container{
+.container-home{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,11 +6,11 @@
     width: 800px;
 }
 
-.lista-filmes{
+.container-home .lista-filmes{
     margin: 15px;
 }
 
-.lista-filmes article{
+.container-home .lista-filmes article{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,17 +21,17 @@
     border-radius: 10px;
 }
 
-strong{
+.container-home strong{
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.lista-filmes img{
+.container-home .lista-filmes img{
     width: 800px;
     max-height: 350px;
 }
 
-.lista-filmes a{
+.container-home .lista-filmes a{
     text-decoration: none;
     color: white;
     font-size: 20px;

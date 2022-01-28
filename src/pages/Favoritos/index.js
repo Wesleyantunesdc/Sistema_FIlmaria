@@ -25,7 +25,7 @@ export default function Favoritos() {
     }
 
     return (
-        <div className='container'>
+        <div className='container-favoritos'>
             <h1>Filmes Favoritos</h1>
             {filmes.length === 0 &&
                 <span>Você não possui nenhum filmes nos seus favoritos</span>

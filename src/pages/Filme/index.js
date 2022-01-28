@@ -35,7 +35,7 @@ export default function Filme() {
         let filmesSalvos = JSON.parse(minhaLista) || []
         const hasFilmes = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id)
         if(hasFilmes){
-            toast.error('Você ja possui esse filmes nos seus favoritos!')
+            toast.warn('Você ja possui esse filme nos seus favoritos!')
             return
         }
 
