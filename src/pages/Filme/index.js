@@ -2,6 +2,7 @@ import './filme.css'
 import { useParams, useHistory } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import api from '../../services/api'
+import { toast } from 'react-toastify'
 
 
 export default function Filme() {
@@ -34,14 +35,14 @@ export default function Filme() {
         let filmesSalvos = JSON.parse(minhaLista) || []
         const hasFilmes = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id)
         if(hasFilmes){
-            alert('Você ja possui esse filme nos seus favoritos')
+            toast.error('Você ja possui esse filmes nos seus favoritos!')
             return
         }
 
         filmesSalvos.push(filme)
         
         localStorage.setItem('filmes', JSON.stringify(filmesSalvos))
-        alert('Filme Salvo com sucesso!')
+        toast.success('Sucesso ao adicionar nos seus favoritos')
     }
 
 
