@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 14px;
+}
+
+.filmes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filme{
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid rgb(1, 173, 185);
+    background-color: rgba(228, 247, 241, 0.438);
+
+}
+
+.filmes button{
+    height: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filmes button a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-excluir{
+    height: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
